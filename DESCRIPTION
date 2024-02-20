@@ -1,0 +1,22 @@
+Package: checks.execucao
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.0.0-9000
+Authors@R: 
+    person("Francisco", "Alves", , "francisco.junior@planejamento.mg.gov.br", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+        license
+URL: https://github.com/splor-mg/checks-planejamento
+BugReports: https://github.com/splor-mg/checks-planejamento/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+  checksplanejamento
+Suggests: 
+    testthat (>= 3.0.0)
+Remotes:
+    github::splor-mg/checks-planejamento
+Config/testthat/edition: 3
