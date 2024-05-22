@@ -1,19 +1,19 @@
 #' @export
-check_vlr_empenhado <- function(detalhe, totais, stop_on_failure = FALSE, output = FALSE) {
+check_vlr_cota_aprovada <- function(detalhe, totais, stop_on_failure = FALSE, output = FALSE) {
   key <- c("ano", "mes_cod")
   
   x <- detalhe |> 
     checksplanejamento:::aggregate(
       "vlr_detalhe", 
       by = key, 
-      rename = list(vlr_empenhado = "vlr_detalhe")
+      rename = list(vlr_cota_aprovada_liquida  = "vlr_detalhe")
     )
   
   y <- totais |> 
     checksplanejamento:::aggregate(
       "vlr_totais", 
       by = key, 
-      rename = list(vlr_empenhado = "vlr_totais")
+      rename = list(vlr_cota_aprovada_liquida  = "vlr_totais")
     )
   
   df <- merge(x, y, by = key, all = TRUE) |> checksplanejamento:::as_accounting()
