@@ -1,6 +1,6 @@
 #' @export
-check_vlr_cota_aprovada <- function(detalhe, totais, stop_on_failure = FALSE, output = FALSE) {
-  key <- c("ano", "mes_cod")
+check_vlr_cota_aprovada <- function(detalhe, totais, mes = TRUE, stop_on_failure = FALSE, output = FALSE) {
+  key <- if (mes) c("ano", "mes_cod") else "ano"
   
   x <- detalhe |> 
     checksplanejamento:::aggregate(
