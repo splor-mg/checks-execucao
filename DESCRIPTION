@@ -1,7 +1,7 @@
 Package: checks.execucao
 Type: Package
 Title: What the Package Does (Title Case)
-Version: 0.0.0-9000
+Version: 0.0.0-9001
 Authors@R: 
     person("Francisco", "Alves", , "francisco.junior@planejamento.mg.gov.br", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
